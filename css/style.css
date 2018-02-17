@@ -6,7 +6,7 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-#container{
+#wrapper{
 	position: relative;
 	width: 100%;
 	min-height: 55vw;
@@ -84,4 +84,29 @@ body{
 	top: 0;
 	left: 50%;
 	z-index: 3;
+}
+
+.skewed .overlay{
+	top: 50%;
+	transform: rotate(30deg) translateY(-50%);
+	height: 200%;
+	transform-origin: top;
+	/*transform: translateY(50%;);*/
+}
+
+.skewed .top{
+	transform: skew(-30deg);
+	margin-left: -1000px;
+	width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+	transform: skew(30deg);
+	margin-left: 1000px;
+}
+
+@media(max-width: 768px){
+	body{
+		font-size: 75%;
+	}
 }
