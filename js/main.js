@@ -5,13 +5,19 @@ document.addEventListener('DOMContentLoaded', function(){
 	let skew = 0;
 	let delta = 0;
 
-});
-
 	if(wrapper.className.indexOf('skewed') != -1){
 		skew = 1000;
 	}
 
 	wrapper.addEventListener('mousemove', function(e){
-		// delta = (e.clientX);
-		console.log(e.clientX);
+		delta = (e.clientX - window.innerWidth / 2) * 0.5;
+		// console.log(e.clientX);
+
+		handle.style.left = e.clientX + delta + 'px';
+
+	topLayer.style.width = e.clientX + skew + delta + 'px';
 	});
+
+	
+});
+
