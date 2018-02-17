@@ -2,33 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<title>Split image</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="container" id="container">
+<section class="skewed" id="container">
 	
-	<section class="section top">
-		<h1 class="header"> Gym
-			<p class="parag">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptates, dolores iusto? Expedita corrupti, commodi accusamus quisquam reprehenderit error nostrum doloribus at, architecto natus ea, adipisci fuga magnam doloremque fugiat.
-			</p>
-		</h1>
-	</section>
+	<div class="layer bottom">
+		<div class="content-wrap">
+			<div class="content-body">
+				<h1>Gym</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam similique voluptate qui ex ab amet commodi, possimus porro quaerat est!</p>
+			</div>
 
-	<section class="section top">
-		<h1 class="header">Work
-			<p class="parag">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aliquam itaque id iste quam sit laboriosam, dolor qui! Alias molestias consequuntur nihil quasi consequatur corrupti laborum, esse nemo nobis iusto!
-			</p>
-		</h1>
-	</section>
-
-	<div class="overlay">
-		
+			<img src="img/white.png" alt="White Corsair">
+		</div>
 	</div>
 
-</div>
+	<div class="layer top">
+		<div class="content-wrap">
+			<div class="content-body">
+				<h1>Work</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam similique voluptate qui ex ab amet commodi, possimus porro quaerat est!</p>
+			</div>
+			<img src="img/black.png" alt="BLack Corsair">
+		</div>
+	</div>
 
+
+	<div class="overlay"></div>
+
+</section>
+
+<script src="js/main.js"></script>
 </body>
 </html>
